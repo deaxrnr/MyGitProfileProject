@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left:5px;
+    white-space: nowrap;
+}.NavName{
+    text-decoration: none;
+    color: white;
+}
+.main-container{
+    padding: 20px;
+}
+.nome{
+    margin: 0 ;
+}
+
+.profileImgContainer{
+    display: block;
+    height: auto;
+}
+.profileImgContainer{
+    width: 40%;
+    display: flex;
+}
+.profileImg{
+    width: 100%;
+    object-fit: contain;
+}
+.profileInfoContainer{
+    margin: 0 20px;
+    width: 80%;
+}
+.socialMedia{
+    display: flex;
+    gap: 12px;
+}
+
+.sectionName{
+    border-bottom: 1px solid #333;
+}
+.profileSection{
+    display: flex;
+    flex-direction: column;
+}
+.repo-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card{
+    margin: 1rem;
+}
+.card-title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cardLink{
+    text-decoration: none;
+    color:black;
+}.cardLink:hover{
+    text-decoration: underline;
+}
+.cardDescription{
+    margin: 0; 
+    height: 70px;
+    overflow: hidden; 
+    text-overflow: "..." ;
+}
+.cardInfos{
+    height: 30%;
+    p{
+        margin:0;
+        font-size: 12px;
+    }
+    .review{
+        margin:0;
+        display: inline-block;
+    }
+}
+.carousel{
+    margin: 20px
+}
+
+.error-container{
+    background-color: #FA8072;
+    align-items: center;
+    margin: 20px;
+    padding: 8px;
+    border: solid 2px red;
+    border-radius: 4px;
+    display: none;
+
+    p{
+        font-weight: 400;
+        margin: auto 0;
+    }
+}
+.displayed{
+    display: flex !important;
+}
+.repoTopic{
+    font-size: 18px;
+    color:rgb(0, 102, 255);
+    text-decoration:underline;
+}
+.btn{
+    margin-right: 15px;
+}
+
+.cardColega{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.containerColega{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px
+}.imgColega{
+    width: 80%;
+    margin: auto;
+}
+
+@media(min-width: 620px){
+    nav ul li {
+        margin-left:20px;
+        white-space: nowrap;
+    }
+    .containerColega{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .repo-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .profileSection{
+        display: flex;
+        flex-direction: row;
+    }
+    .profileImgContainer{
+        display: flex;
+    }.profileInfoContainer{
+        width: auto;
+    }
+}

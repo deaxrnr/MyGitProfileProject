@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <title>Perfil</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="nomeUsuario"><a href="#">Nome do Usuário</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#profile-section">Seção 1</a></li>
+                <li><a href="#post-section">Seção 2</a></li>
+                <li><a href="#RecomendedCarousel">Seção 3</a></li>
+                <li><a href="#ColegasDeTrabalho">Seção 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="error-container" id="errorContainer">
+        <img src="../assets/erro.png" width="30">
+        <p> Algo deu errado. Verifique o arquivo ReadMe para encontrar o passo a passo!</p>
+    </div>
+    <div class="main-container">
+        <section class="profile-section" id="profile-section">
+            <h2 class="sectionName">Perfil</h2>
+            <div class="profileSection">
+                <div class="profileImgContainer">
+                    <img src="/" alt="Foto de Perfil" id="profileImage" class="profileImg">
+                </div>
+                <div class="profileInfoContainer">
+                    <h3 class="nome" id="seuNome">Nome do Usuário</h3>
+                    <p id="descricao">Descrição do usuário aqui...</p>
+                    <p id="location">Local do usuário aqui...</p>
+                    <p id="site">Site...</p>
+                    <div class="socialMedia">
+                        <img alt="face" src="assets/facebook.png" width="40">
+                        <img alt="twitter" src="assets/twitter.png" width="40">
+                        <a href='https://www.instagram.com/deaxrnr?igsh=MTl6YzkyZGxwc2M5ZQ%3D%3D&utm_source=qr'><img alt="instagram" src="assets/insta.png" width="40"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="post-section" id="post-section">
+            <h2 class="sectionName">Repositorios</h2>
+            <div id="repoCards" class="repo-cards">
+                <p>Nenhum repo encontrado ...</p>
+            </div>
+        </section>
+
+        <section class="RecomendedCarousel"  id="RecomendedCarousel">
+            <h2 class="sectionName">Conteudo Recomendado</h2>
+
+            <div id="carouselCaptions" class="carousel slide">
+                <div class="carousel-indicators" id="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div class="carousel-inner" id="recomendedCarousel">
+                  <div class="carousel-item active">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/825/231/807/simple-background-black-background-windows-errors-errors-simple-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Sorry! No content found</h5>
+                      <p>ops! algo deu errado</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section class="ColegasDeTrabalho" id="ColegasDeTrabalho">
+            <h2 class="sectionName">Pinturas</h2>
+            <div id="colegues" class="containerColega">
+                <p>Nenhum conteudo carregado ...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="utils/fetchContent.js"></script>
+    <script>
+        updatePage();
+    </script>
+</body>
+
+</html>
