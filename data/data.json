@@ -1,0 +1,52 @@
+{
+    "contexto": {
+        "nome": "Luisa Basso",
+        "profileImg":"assets/images/myProfile.jpg",
+        "descricao": "Cineasta, Diretora de Fotografia & Roteirista Videomaker & Artista Creator | Edição de Vídeos",
+        "location":"Poços de caldas, MG, Brazil",
+        "site": "www.luisa.com.br",
+        "contribuidores": 1,
+        "colegas": [
+            {
+                "nome": "1",
+                "img": "assets/images/1.jpg"
+            },
+            {
+                "nome": "2",
+                "img": "assets/images/2.jpg"
+            },
+            {
+                "nome": "3",
+                "img": "assets/images/3.jpg"
+            },
+            {
+                "nome": "4",
+                "img": "assets/images/4.jpg"
+            },
+            {
+                "nome": "5",
+                "img": "assets/images/5.jpg"
+            },
+            {
+                "nome": "6",
+                "img": "assets/images/6.jpg"
+            }
+        ],
+        "repositorios": [
+            {
+                "name":"Cheque Mate",
+                "link": "https://www.youtube.com/watch?v=Ihdht0ezPOI",
+                "descricao": "Curta-metragem Slasher feito para o Festival de Curtas da Faculdade de Comunicação e Artes (FCA)",
+                "datacriacao": "2 de novembro de 2023",
+                "linguagem": "corpora/artistica",
+                "topicos": "arte/cinema/teatro",
+                "avaliacao": 5,
+                "contribuidores": 10,
+                "recomendado": {
+                    "isRecomended":false,
+                    "img":"assets/images/chequemate.jpg"
+                }
+            }
+        ]
+    }
+}
